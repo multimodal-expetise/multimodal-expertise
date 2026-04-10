@@ -1,0 +1,208 @@
+{
+  "datasetCommonParams": {
+    "Expertise": {
+      "feature_dims": [
+        768,
+        74,
+        35
+      ],
+      "language": "ch",
+      "KeyEval": "Loss"
+    }
+  },
+  "A1_LSTM_l": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "l",
+      "hidden_dims": [256, 32, 256],
+      "text_out": 128,
+      "audio_out": 32,
+      "video_out": 64,
+      "post_fusion_dim": 16,
+      "dropouts": [0.2,0.2,0.2, 0.2],
+      "batch_size": 64,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0
+  },
+  "A2_LSTM_a": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "a",
+      "hidden_dims": [256, 32, 256],
+      "text_out": 128,
+      "audio_out": 32,
+      "video_out": 256,
+      "post_fusion_dim": 32,
+      "dropouts": [0.3,0.3, 0.3, 0.5],
+      "batch_size": 32,
+      "learning_rate": 0.002,
+      "weight_decay": 0.0
+  },
+  "A3_LSTM_v": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "v",
+      "hidden_dims": [128, 32,128],
+      "text_out": 256,
+      "audio_out": 256,
+      "video_out": 128,
+      "post_fusion_dim": 128,
+      "dropouts": [ 0.4,0.4, 0.4, 0.4],
+      "batch_size": 128,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0
+  },
+  "A4_LF_LSTM_la": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "la",
+      "hidden_dims": [ 64, 32, 64],
+      "text_out": 32,
+      "audio_out": 256,
+      "video_out": 32,
+      "post_fusion_dim": 64,
+      "dropouts": [0.3, 0.3, 0.3,0.3 ],
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.001
+  },
+  "A5_LF_LSTM_lv": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "lv",
+      "hidden_dims": [64,16,64],
+      "text_out": 128,
+      "audio_out": 32,
+      "video_out": 256,
+      "post_fusion_dim": 16,
+      "dropouts": [0.3, 0.3, 0.3,0.3],
+      "batch_size": 128,
+      "learning_rate": 0.01,
+      "weight_decay": 0.0
+  },
+  "A6_LF_LSTM_av": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "av",
+      "hidden_dims": [ 128,32,128 ],
+      "text_out": 128,
+      "audio_out": 32,
+      "video_out": 128,
+      "post_fusion_dim": 16,
+      "dropouts": [  0.3, 0.3, 0.3, 0.5],
+      "batch_size": 64,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0
+  },
+  "A7_LF_LSTM_lav": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "lav",
+      "hidden_dims": [ 64, 16, 64],
+      "text_out": 64,
+      "audio_out": 128,
+      "video_out": 32,
+      "post_fusion_dim": 16,
+      "dropouts": [ 0.2, 0.2,0.2, 0.2 ],
+      "batch_size": 64,
+      "learning_rate": 0.005,
+      "weight_decay": 0.0
+  },
+  "A8_LF_MLP_lav": {
+      "need_data_aligned": false,
+      "need_model_aligned": false,
+      "need_normalized": false,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "lav",
+      "hidden_dims": [128, 32, 128],
+      "text_out": 256,
+      "post_fusion_dim": 64,
+      "dropouts": [0.4,  0.4,0.4,  0.4],
+      "batch_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0
+  },
+  "A9_EF_MLP_lav": {
+      "need_data_aligned": true,
+      "need_model_aligned": true,
+      "need_normalized": false,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "lav",
+      "hidden_dims": 64,
+      "num_layers": 2,
+      "dropout": 0.5,
+      "batch_size": 64,
+      "learning_rate": 0.01,
+      "weight_decay": 0.0
+  },
+  "A10_EF_LSTM_lav": {
+      "need_data_aligned": true,
+      "need_model_aligned": true,
+      "need_normalized": false,
+      "early_stop": 40,
+      "with_control": false,
+      "abl": "lav",
+      "hidden_dims": 64,
+      "num_layers": 2,
+      "dropout": 0.4,
+      "batch_size": 32,
+      "learning_rate": 0.005,
+      "weight_decay": 0.0
+  },
+  "A11_MFN_lav": {
+      "need_data_aligned": true,
+      "need_model_aligned": true,
+      "need_normalized": true,
+      "early_stop": 40,
+      "with_control": false,
+      "hidden_dims": [ 128, 32,  128 ],
+      "memsize": 256,
+      "windowsize": 2,
+      "NN1Config": {
+        "drop": 0.2,
+        "shapes": 64
+      },
+      "NN2Config": {
+        "drop": 0.0,
+        "shapes": 128
+      },
+      "gamma1Config": {
+        "drop": 0.2,
+        "shapes": 32
+      },
+      "gamma2Config": {
+        "drop": 0.2,
+        "shapes": 64
+      },
+      "outConfig": {
+        "drop": 0.5,
+        "shapes": 128
+      },
+      "batch_size": 32,
+      "learning_rate": 0.0005,
+      "weight_decay": 0
+      }
+}
