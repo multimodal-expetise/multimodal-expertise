@@ -13,8 +13,8 @@ from models.singleTask.A8_LF_MLP_lav import A8_LF_MLP_lav
 from models.singleTask.A9_EF_MLP_lav import A9_EF_MLP_lav
 from models.singleTask.A10_EF_LSTM_lav import A10_EF_LSTM_lav
 from models.singleTask.A11_MFN_without_av import A11_MFN_without_av
-from models.singleTask.A12_MFN_without_ta import A12_MFN_without_ta
-from models.singleTask.A13_MFN_without_tv import A13_MFN_without_tv
+from models.singleTask.A12_MFN_without_tv import A12_MFN_without_tv
+from models.singleTask.A13_MFN_without_ta import A13_MFN_without_ta
 from models.singleTask.A14_MFN_lav import A14_MFN_lav
 
 
@@ -39,8 +39,8 @@ class AMIO(nn.Module):
 
         # MFN ablation
         'A11_MFN_without_av': A11_MFN_without_av,
-        'A12_MFN_without_ta': A12_MFN_without_ta,
-        'A13_MFN_without_tv': A13_MFN_without_tv,
+        'A12_MFN_without_tv': A12_MFN_without_tv,
+        'A13_MFN_without_ta': A13_MFN_without_ta,
         'A14_MFN_lav': A14_MFN_lav,
     }
 
