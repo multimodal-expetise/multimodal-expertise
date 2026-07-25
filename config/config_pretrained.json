@@ -207,7 +207,7 @@
       "gamma2Config": {"drop": 0.0,"shapes": 64 },
       "outConfig": {"drop": 0.2,"shapes": 64},
       "batch_size": 128,
-      "learning_rate": 0.002}
+      "learning_rate": 0.002
   },
   "A13_MFN_without_ta": {
       "need_data_aligned": true,
