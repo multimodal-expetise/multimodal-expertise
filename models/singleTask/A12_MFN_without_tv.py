@@ -6,9 +6,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class A13_MFN_without_tv(nn.Module):
+class A12_MFN_without_tv(nn.Module):
     def __init__(self, args):
-        super(A13_MFN_without_tv, self).__init__()
+        super(A12_MFN_without_tv, self).__init__()
         self.d_l, self.d_a, self.d_v = args.feature_dims
         self.dh_l, self.dh_a, self.dh_v = args.hidden_dims
         total_h_dim = self.dh_l + self.dh_a + self.dh_v
