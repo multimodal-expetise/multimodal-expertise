@@ -13,8 +13,8 @@ Reproduction code for the paper evaluating multimodal fusion models on the Exper
 | A9 | EF_MLP | Triple (LAV) | Early |
 | A10 | EF_LSTM | Triple (LAV) | Early |
 | A11 | MFN w/o A↔V | Triple (LAV) | MFN |
-| A12 | MFN w/o T↔V | Triple (LAV) | MFN |
-| A13 | MFN w/o T↔A | Triple (LAV) | MFN |
+| A12 | MFN w/o T↔A | Triple (LAV) | MFN |
+| A13 | MFN w/o T↔V | Triple (LAV) | MFN |
 | A14 | MFN (full) | Triple (LAV) | MFN |
 
 L = Language/Text, A = Audio, V = Visual
